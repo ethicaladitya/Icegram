@@ -263,7 +263,7 @@ if ( !class_exists( 'Icegram_Message_Admin' ) ) {
 						echo $color_field_html;
 				        $active_plugins =  get_option( 'active_plugins', array() );
 				        if (is_multisite()) {
-								$active_plugins = array_merge($active_plugins, get_site_option('active_sitewide_plugins', array()));
+								$active_plugins = array_merge($active_plugins, get_site_option('active_plugins', array()));
 						}
 
 					?>
